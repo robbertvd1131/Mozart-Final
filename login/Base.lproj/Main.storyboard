@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="v6D-sK-MhB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Register View Controller-->
+        <scene sceneID="9UH-eQ-u7g">
+            <objects>
+                <viewController id="So8-3l-SKZ" customClass="RegisterViewController" customModule="Mozart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bWn-1G-LmG"/>
+                        <viewControllerLayoutGuide type="bottom" id="QCk-kq-pJv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IX6-JX-qtx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="afH-Ui-rSG">
+                                <rect key="frame" x="-6" y="-9" width="386" height="686"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e8E-wW-fe6">
+                                <rect key="frame" x="67" y="0.0" width="240" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="AvD-Wf-mvz">
+                                        <rect key="frame" x="56" y="81" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="22o-iK-4Z3"/>
+                                            <constraint firstAttribute="height" constant="128" id="dPI-Sr-0DG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LZ4-SY-k3y" customClass="DefaultMozartTextField" customModule="Mozart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="245" width="240" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oS4-ru-rAU" customClass="DefaultMozartTextField" customModule="Mozart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="365" width="240" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2S-Z5-gQX" customClass="DefaultMozartButton" customModule="Mozart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="440" width="240" height="40"/>
+                                        <state key="normal" title="Create account"/>
+                                        <connections>
+                                            <action selector="close:" destination="So8-3l-SKZ" eventType="touchUpInside" id="sA9-1f-bwV"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4we-li-R5b" customClass="DefaultMozartTextField" customModule="Mozart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="305" width="240" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="AvD-Wf-mvz" firstAttribute="centerX" secondItem="e8E-wW-fe6" secondAttribute="centerX" id="8so-Lc-5bu"/>
+                                    <constraint firstItem="oS4-ru-rAU" firstAttribute="centerX" secondItem="e8E-wW-fe6" secondAttribute="centerX" id="JkV-Rw-ddZ"/>
+                                    <constraint firstItem="4we-li-R5b" firstAttribute="centerX" secondItem="e8E-wW-fe6" secondAttribute="centerX" id="MWb-Jz-rzF"/>
+                                    <constraint firstItem="a2S-Z5-gQX" firstAttribute="centerX" secondItem="e8E-wW-fe6" secondAttribute="centerX" id="Qri-Rd-JTo"/>
+                                    <constraint firstItem="LZ4-SY-k3y" firstAttribute="centerX" secondItem="e8E-wW-fe6" secondAttribute="centerX" id="Z2l-k5-U0v"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1c-8l-hbR">
+                                <rect key="frame" x="20" y="28" width="50" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="CLOSE"/>
+                                <connections>
+                                    <action selector="close:" destination="So8-3l-SKZ" eventType="touchUpInside" id="isF-5a-zuJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="btnCreateAccount" destination="a2S-Z5-gQX" id="rz1-by-gFF"/>
+                        <outlet property="imgMozart" destination="AvD-Wf-mvz" id="opZ-UF-aDI"/>
+                        <outlet property="txtConfirmPassword" destination="oS4-ru-rAU" id="hug-OO-rGT"/>
+                        <outlet property="txtName" destination="LZ4-SY-k3y" id="Udy-ho-Gwa"/>
+                        <outlet property="txtPassword" destination="4we-li-R5b" id="XtI-sp-Inc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvV-Rj-x0Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-491.5" y="1190.5"/>
+        </scene>
+        <!--Log In View Controller-->
+        <scene sceneID="dpq-wW-Tnc">
+            <objects>
+                <viewController storyboardIdentifier="loginVC" id="awk-wR-jlS" customClass="LogInViewController" customModule="Mozart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zij-zP-PbN"/>
+                        <viewControllerLayoutGuide type="bottom" id="dPF-jQ-98Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qmg-Mt-Lw5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="yRb-Yy-R9P">
+                                <rect key="frame" x="-6" y="-9" width="386" height="686"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YZa-BU-rql">
+                                <rect key="frame" x="67" y="0.0" width="240" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="OUY-OO-Z2V">
+                                        <rect key="frame" x="56" y="80" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="QbQ-RS-uPy"/>
+                                            <constraint firstAttribute="height" constant="128" id="Uye-eM-M7I"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qdD-Xs-X6b" customClass="DefaultMozartTextField" customModule="Mozart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="246" width="240" height="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zbK-Ez-Ft9" customClass="DefaultMozartTextField" customModule="Mozart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="312" width="240" height="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0j3-SQ-Hw7" customClass="DefaultMozartButton" customModule="Mozart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="400" width="240" height="40"/>
+                                        <state key="normal" title="Log In"/>
+                                        <connections>
+                                            <action selector="logIn:" destination="awk-wR-jlS" eventType="touchUpInside" id="RjT-ms-Ngi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baP-1b-cnT" customClass="DefaultMozartButton" customModule="Mozart" customModuleProvider="target">
+                                        <rect key="frame" x="29" y="589" width="183" height="40"/>
+                                        <state key="normal" title="Sign Up for Mozart"/>
+                                        <connections>
+                                            <segue destination="So8-3l-SKZ" kind="presentation" id="pu0-60-EWu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="baP-1b-cnT" firstAttribute="centerX" secondItem="YZa-BU-rql" secondAttribute="centerX" id="OMY-jG-GgD"/>
+                                    <constraint firstItem="zbK-Ez-Ft9" firstAttribute="centerX" secondItem="YZa-BU-rql" secondAttribute="centerX" id="eJr-9k-4PJ"/>
+                                    <constraint firstItem="qdD-Xs-X6b" firstAttribute="centerX" secondItem="YZa-BU-rql" secondAttribute="centerX" id="mmQ-bc-6JU"/>
+                                    <constraint firstItem="OUY-OO-Z2V" firstAttribute="centerX" secondItem="YZa-BU-rql" secondAttribute="centerX" id="rpt-Gl-OVB"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YZa-BU-rql" firstAttribute="centerX" secondItem="qmg-Mt-Lw5" secondAttribute="centerX" id="zNL-jr-N9F"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="btnLogIn" destination="0j3-SQ-Hw7" id="icm-g4-csi"/>
+                        <outlet property="btnSignUp" destination="baP-1b-cnT" id="g0k-ma-mKO"/>
+                        <outlet property="imgMozart" destination="OUY-OO-Z2V" id="nFg-eO-GNS"/>
+                        <outlet property="txtName" destination="qdD-Xs-X6b" id="Yps-vt-h2Z"/>
+                        <outlet property="txtPassword" destination="zbK-Ez-Ft9" id="DCS-O8-5JW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7eW-em-g80" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-491.5" y="386.5"/>
+        </scene>
+        <!--Main Menu View Controller-->
+        <scene sceneID="bTc-pa-lCV">
+            <objects>
+                <viewController id="v6D-sK-MhB" customClass="MainMenuViewController" customModule="Mozart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ddw-aV-DgX"/>
+                        <viewControllerLayoutGuide type="bottom" id="KBl-8S-j1e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bK6-qn-taP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ZsH-c9-hlk">
+                                <rect key="frame" x="-6" y="-9" width="386" height="686"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ro5-6G-Cye">
+                                <rect key="frame" x="20" y="28" width="67" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="LOG OUT"/>
+                                <connections>
+                                    <action selector="logOut:" destination="v6D-sK-MhB" eventType="touchUpInside" id="xzX-TT-gXC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NeQ-Qv-LSt" customClass="MenuMozartButton" customModule="Mozart" customModuleProvider="target">
+                                <rect key="frame" x="147" y="257" width="80" height="80"/>
+                                <state key="normal" title="Keyboard" image="keyboard"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xT-kO-kvM" customClass="MenuMozartButton" customModule="Mozart" customModuleProvider="target">
+                                <rect key="frame" x="147" y="407" width="80" height="80"/>
+                                <state key="normal" title="Your scores" image="your scores"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PID-rH-k5H" customClass="MenuMozartButton" customModule="Mozart" customModuleProvider="target">
+                                <rect key="frame" x="147" y="107" width="80" height="80"/>
+                                <state key="normal" title="Dictaphone" image="dictaphone"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HBC-qw-33L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100.5" y="386.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="640" height="1136"/>
+        <image name="dictaphone" width="512" height="512"/>
+        <image name="keyboard" width="512" height="512"/>
+        <image name="logo" width="199" height="136"/>
+        <image name="your scores" width="512" height="512"/>
+    </resources>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+</document>
